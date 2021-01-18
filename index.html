@@ -4,8 +4,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Online Fruits and Veggies</title>
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
+
+body {
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
 form {border: 3px solid #f1f1f1;}
+
+h1{
+   text-align:center;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("img/groceryHomePage.jpeg");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 input[type=text], input[type=password] {
   width: 20%;
@@ -14,6 +37,11 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+label {
+  color: white;
+  padding: 8px;
 }
 
 button {
@@ -89,11 +117,12 @@ return true;
 </head>
 <body>
 
-<h1>Your Online Grocery</h1>
 
+<h1>Online Grocery</h1>
+<div class="bg-img">
 <form name="myform" action ="./AddToCart.html" onsubmit="return validateform()">
   <div class="imgcontainer">
-    <img src="img/groceryHomePage.jpeg" alt="Avatar" class="avatar">
+    #<img src="img/groceryPack.jpeg" alt="Avatar" class="avatar">
     <p> Your ultimate grocery store</p>
   </div>
 
@@ -110,6 +139,11 @@ return true;
   <div class="container" style="background-color:#f1f1f1">
   </div>
 </form>
+</div>
 
+<div>
+	<p> developer : mamun <br>
+	<p> NYC
+</div>	
 </body>
 </html>
